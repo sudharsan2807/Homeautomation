@@ -1,0 +1,3082 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  /*font-family: 'Roboto Mono', monospace;*/
+}
+
+button {
+  cursor: pointer;
+}
+
+.box-3 .col-1 .display {
+  display: block;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+title {
+  text-transform: uppercase;
+}
+
+.error-register {
+  color: red;
+  font-size: 0.7rem;
+}
+
+.mycontent {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.letter-size {
+  font-size: 2rem;
+}
+
+.col-3 .letter-big {
+  width: 25px;
+  height: 25px;
+}
+
+.mybackground {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.mybox .col-2 .mypower i .power-of {
+  background-color: rgb(173, 158, 158);
+}
+
+.roomviewpage #foruse .box .power-of {
+  background-color: rgb(173, 158, 158);
+}
+
+.mytitle {
+  position: absolute;
+  top: 0;
+  text-transform: uppercase;
+  padding: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 2rem;
+  color: white;
+  font-weight: 600;
+  z-index: 400;
+}
+
+.myoverlay {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  opacity: 60%;
+  object-fit: cover;
+  top: 0;
+}
+
+.myarrow {
+  position: absolute;
+  top: 0;
+  margin: 20px 0px 0 20px;
+}
+
+.blurbox {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 160vh;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  z-index: 500;
+}
+
+.btnconfigure {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px 20px 0 0;
+  background-color: transparent;
+  color: white;
+  border: 3px solid #009688;
+  padding: 10px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  z-index: 1;
+}
+
+.btnconfigure span {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background-color: #009688;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.btnconfigure:hover span {
+  width: 100%;
+}
+
+.btnconfigure:hover {
+  border: 0;
+  background-color: transparent;
+}
+
+.backarrow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 1.5rem;
+  height: 50px;
+  width: 50px;
+  z-index: 400;
+}
+
+/* frontpage */
+.myfront {
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+}
+
+.myfront .mycontenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.myfront .myoverlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  opacity: 40%;
+  overflow: hidden;
+}
+
+.myfront .morebutton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.myfront .myskip {
+  z-index: 2000;
+  margin: 1rem;
+}
+
+.myfront button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 5px;
+  width: 5rem;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid white;
+  font-size: 1.1rem;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.myfront button:hover {
+  background-color: white;
+  color: black;
+}
+
+.typing-container {
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 10px;
+  display: inline-block;
+}
+
+.line {
+  font-size: 3rem;
+  letter-spacing: 10px;
+}
+
+.line2 {
+  font-size: 3rem;
+  letter-spacing: 10px;
+  border-right: 5px solid white;
+  display: inline-block;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  animation:
+    typing 2s steps(10),
+    cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+.myfront .mybutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.mybutton button {
+  padding: 7px;
+  width: 15rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: white;
+  font-weight: 500;
+  position: relative;
+  border: 3px solid #009688;
+  border-radius: 50px;
+  z-index: 2;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.mybutton button span {
+  width: 0;
+  height: 100%;
+  position: absolute;
+  border-radius: 50px;
+  background-color: #009688;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.mybutton button:hover span {
+  width: 100%;
+}
+
+.mybutton button:hover {
+  border: 0;
+  background-color: transparent;
+  color: white;
+}
+
+.mymore button {
+  padding: 7px;
+  width: 15rem;
+  position: relative;
+  background-color: transparent;
+  border: 2px solid #009688;
+  font-size: 1.3rem;
+  z-index: 1;
+}
+
+.mymore button span {
+  width: 0;
+  height: 100%;
+  background-color: #009688;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.mymore button:hover span {
+  width: 100%;
+}
+
+.mymore button:hover {
+  border: 0;
+  background-color: transparent;
+  color: white;
+}
+
+/*home*/
+.myhome {
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: contain;
+}
+
+.myhome .myoverlay {
+  background-color: black;
+  opacity: 40%;
+  width: 100vw;
+  height: 100vh;
+}
+
+.myhome .mynav-bar {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 5rem;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.myhome .mynav-bar .mylogo {
+  height: 8rem;
+  width: 8rem;
+  padding: 20px;
+}
+
+.myhome .mynav-bar .mylogo img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.myhome .mynav-bar .mynav {
+  position: relative;
+}
+
+.mynav-bar .mynav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.mynav-bar .mynav ul li {
+  padding: 20px;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.myhome .mynav-bar .mynav ul .myemail {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  max-width: 15rem;
+}
+
+.mynav-bar .mynav ul li::after {
+  content: '';
+  width: 0;
+  height: 5px;
+  background-color: rgb(6, 233, 233);
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.mynav-bar .mynav ul .account-icon {
+  display: none;
+}
+
+.mynav-bar .mynav ul li:hover::after {
+  width: 100%;
+}
+
+.myhome .mynav-bar .mynav ul .myemail::after {
+  content: none;
+}
+
+.mynav ul i {
+  padding: 20px 20px 20px 0px;
+  font-size: 2rem;
+}
+
+.mynav-bar .mymenu {
+  display: none;
+}
+
+.mybox {
+  display: flex;
+  position: absolute;
+  top: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100vw;
+  margin-top: 10rem;
+  gap: 2rem;
+  padding: 0 2rem 0 2rem;
+}
+
+.box-1,
+.box-2,
+.box-3,
+.box-4 {
+  flex: 1 1 17rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgb(252, 186, 3, 0.3);
+  top: 0;
+}
+
+.box-1,
+.box-3,
+.box-4 {
+  align-items: center;
+}
+
+.col-1 {
+  width: 12rem;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+}
+
+.col-1 img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.col-2 .myarrow {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.col-2 .myarrow:hover {
+  background-color: rgb(199, 192, 192);
+  border-radius: 50%;
+}
+
+.col-2 .myarrow img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  color: white;
+}
+
+.box-1 {
+  padding: 2rem;
+}
+
+.box-1 .col-1 {
+  width: 11rem;
+  padding-top: 2rem;
+}
+
+.box-1 .col-1 img {
+  object-fit: cover;
+}
+
+.box-1 .col-2 {
+  max-width: 3rem;
+}
+
+.box-2 .col-1 {
+  width: 11rem;
+  padding-left: 1rem;
+}
+
+.box-2 .col-1 img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.box-2 .col-2 .myarrow {
+  z-index: 500;
+}
+
+.box-2 .col-3 {
+  position: relative;
+  padding: 2.8rem 0;
+  display: flex;
+  gap: 10px;
+}
+
+.box-2 .col-3 .myrange-box {
+  width: 15px;
+  background: linear-gradient(red 0%, yellow 50%, green 100%);
+  border: 2px solid white;
+  position: relative;
+  border-radius: 25px;
+}
+
+.box-2 .col-3 .myrange-box span {
+  width: 100%;
+  height: 0%;
+  background-color: white;
+  position: absolute;
+}
+
+.box-2 .col-3 .myrange {
+  width: 15px;
+  height: 100%;
+  background-color: aliceblue;
+  z-index: 2;
+}
+
+.box-2 .col-3 .myinfo {
+  padding: 2rem 0;
+  padding-right: 1rem;
+}
+
+.box-2 .col-3 .myinfo ul {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  list-style: none;
+  text-decoration: none;
+}
+
+.myinfo ul li {
+  color: white;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.myinfo ul li span {
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.myinfo ul li:nth-child(2) span {
+  background-color: rgb(197, 197, 0);
+}
+
+.myinfo ul li:nth-child(3) span {
+  background-color: green;
+}
+
+.myinfo ul li p {
+  margin-left: 2rem;
+}
+
+.box-3 .col-1 {
+  padding: 2rem;
+  width: 15rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.box-3 .col-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.mygif {
+  height: 1rem;
+  transform: scale(2.5);
+  position: absolute;
+  display: none;
+}
+
+.box-4 .col-1 {
+  justify-items: center;
+  display: flex;
+}
+
+.box-4 .col-1 img {
+  object-fit: contain;
+}
+
+.box-1 .col-2 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col-2 .mywifi {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-transform: uppercase;
+  color: white;
+  padding: 1rem;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.mywifi span {
+  width: 20px;
+  height: 20px;
+  background-color: green;
+  border-radius: 50%;
+  border: 3.5px solid white;
+}
+
+.box-1 .col-2 .mypower {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 2.3rem;
+}
+
+.box-1 .col-2 .mypower i {
+  font-size: 4rem;
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+.box-1 .col-2 .mypower span {
+  position: absolute;
+  width: 5.3rem;
+  height: 5.3rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: -1;
+  background-color: rgb(6, 233, 233);
+  /*background-color: rgb(173, 158, 158);*/
+}
+
+.box-3 .col-2 {
+  width: 7rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-3 .col-2 .mypower {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.box-3 .col-2 .mypower i {
+  font-size: 4rem;
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+.box-3 .col-2 .mypower span {
+  position: absolute;
+  width: 5.3rem;
+  height: 5.3rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: -1;
+  background-color: rgb(6, 233, 233);
+  /*background-color: rgb(173, 158, 158);*/
+}
+
+.box-3 .col-3 {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  font-size: 4rem;
+  color: white;
+  align-items: center;
+}
+
+.box-3 .col-3 span {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.box-3 .col-3 p {
+  font-size: 1rem;
+  text-transform: uppercase;
+  position: absolute;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.box-4 .col-2 {
+  width: 7rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-4 .col-2 .mypower {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.box-4 .col-2 .mypower i {
+  font-size: 4rem;
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+.box-4 .col-2 .mypower span {
+  position: absolute;
+  width: 5.3rem;
+  height: 5.3rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: rgb(6, 233, 233);
+  z-index: -1;
+}
+
+/*config*/
+
+.myconfig {
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+}
+
+.myconfig .mybutton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.myconfig .mybutton button {
+  padding: 13px;
+  width: 35rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-right: 0;
+  background-color: transparent;
+  color: white;
+  font-weight: 600;
+  position: relative;
+  border: 5px solid #009688;
+  border-radius: 50px;
+  z-index: 2;
+  overflow: hidden;
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.myconfig .mybutton button span {
+  width: 0;
+  height: 100%;
+  position: absolute;
+  border-radius: 50px;
+  background-color: #009688;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.myconfig .mybutton button:hover span {
+  width: 100%;
+}
+
+.myconfig .mybutton button:hover {
+  border: 0;
+  background-color: transparent;
+}
+
+/*wifi*/
+
+.wifimessage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+}
+
+.dot-animation {
+  font-size: 24px;
+  /* Adjust the font size as needed */
+  animation: dotBlink 1s linear infinite;
+}
+
+@keyframes dotBlink {
+  0% {
+    content: ".";
+  }
+
+  25% {
+    content: "..";
+  }
+
+  50% {
+    content: "...";
+  }
+
+  75% {
+    content: "....";
+  }
+
+  100% {
+    content: "";
+  }
+}
+
+
+/*motorconfigbox*/
+.motorconfigbox .myviewbox {
+  height: 100vh;
+  width: 100vw;
+}
+
+.motorconfigbox .time-selector {
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  border: 4px solid #009688;
+  border-radius: 30px;
+  padding: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.motorconfigbox .dailtimer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.motorconfigbox .timenobox {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.motorconfigbox .timeno {
+  display: flex;
+  background-color: #009688;
+  padding: 6px;
+  width: 7.2rem;
+  border-radius: 40px;
+}
+
+.motorconfigbox .timeno span {
+  font-size: 23px;
+  text-transform: lowercase;
+}
+
+.motorconfigbox .timeno select {
+  background-color: transparent;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding-left: 3px;
+  border: none;
+}
+
+.motorconfigbox .timeno option {
+  background-color: #009688;
+  color: white;
+}
+
+.motorconfigbox .timeno svg {
+  border-top: 2px solid white;
+  cursor: pointer;
+}
+
+.motorconfigbox .time-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 12rem;
+  gap: 1rem;
+}
+
+.motorconfigbox .number {
+  width: 10rem;
+  height: 10rem;
+  padding: 5px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  color: white;
+}
+
+.motorconfigbox .noon {
+  width: 10rem;
+  height: 10rem;
+  padding: 5px;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: white;
+}
+
+.motorconfigbox button {
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  background-color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.motorconfigbox button:hover {
+  background-color: #f0f0f0;
+}
+
+.motorconfigbox span {
+  font-size: 2rem;
+  color: white;
+}
+
+.motorconfigbox .mysave {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: white;
+  padding: 0 25px;
+  font-weight: 500;
+  border: 3px solid #009688;
+  border-radius: 50px;
+  z-index: 2;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+
+.motorconfigbox .mysave span {
+  position: absolute;
+  width: 0;
+  height: 100%;
+  border-radius: 40px;
+  background-color: #009688;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: 0.5s;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.motorconfigbox .delay-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 2rem;
+}
+
+.motorconfigbox .delay {
+  background-color: #009688;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+
+.motorconfigbox .delay span {
+  font-size: 1rem;
+}
+
+.motorconfigbox .delay input {
+  background-color: transparent;
+  border: 0;
+  font-size: 1rem;
+  color: white;
+  width: 60px;
+  outline: 0;
+  padding: 0 10px;
+}
+
+.motorconfigbox .delay input::placeholder {
+  color: rgb(255, 255, 255, 0.7);
+}
+
+.motorconfigbox .mysave:hover span {
+  width: 100%;
+}
+
+.motorconfigbox .mysave:hover {
+  border: none;
+  background-color: transparent;
+}
+
+/* motorviewbox */
+
+.motorviewbox .boxtime {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: white;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.boxtime .info-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.boxtime .info-top .toend {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.boxtime .info-top .toend i {
+  color: white;
+}
+
+.motorviewbox .boxtime-1,
+.motorviewbox .boxtime-2 {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  border: 2px solid #009688;
+  border-radius: 30px;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+.motorviewbox .time {
+  display: flex;
+  gap: 1rem;
+  font-size: 5rem;
+}
+
+/* tank-view-box */
+
+.tankviewbox .tankpage {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  margin-top: 8rem;
+  gap: 2rem;
+}
+
+.tankviewbox .mytankinfo {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.tankviewbox p {
+  color: white;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.tankviewbox p:nth-child(2) {
+  position: absolute;
+  top: 20%;
+}
+
+.tankviewbox p:nth-child(3) {
+  position: absolute;
+  top: 50%;
+}
+
+.tankviewbox p:nth-child(4) {
+  position: absolute;
+  top: 80%;
+}
+
+.tankviewbox p:nth-child(5) {
+  position: absolute;
+  bottom: 0;
+}
+
+.tankviewbox .statusinfo,
+.tankviewbox .levelinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  padding-left: 20px;
+  height: 30rem;
+  overflow: hidden;
+  width: 12rem;
+}
+
+.tankviewbox .statusinfo {
+  align-items: self-end;
+}
+
+.tankviewbox .mytank {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.tankviewbox .mytank .mytank-top {
+  width: 17rem;
+  height: 35px;
+  background-color: transparent;
+  border: 5px solid white;
+  border-radius: 20px 20px 0 0;
+}
+
+.tankviewbox .mytank .mytank-botm {
+  width: 28rem;
+  height: 32.5rem;
+  background-color: transparent;
+  border: 5px solid white;
+  border-radius: 20% 20% 35px 35px;
+  position: relative;
+  overflow: hidden;
+}
+
+.tankviewbox .mytank .wavebox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  gap: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.tankviewbox .mytank .wavebox .box {
+  width: 100%;
+  height: 50%;
+  background-color: rgb(0, 255, 255);
+}
+
+.tankviewbox .mytank .mywave {
+  width: 100%;
+  height: 25%;
+  background-color: rgb(0, 255, 255);
+  animation: water-wave 3s ease-in-out infinite;
+}
+
+.tankviewbox .mytank .waveblue {
+  animation: none;
+}
+
+@keyframes water-wave {
+
+  0%,
+  100% {
+    clip-path: polygon(0% 45%,
+        16% 44%,
+        33% 50%,
+        54% 60%,
+        70% 61%,
+        84% 59%,
+        100% 52%,
+        100% 100%,
+        0% 100%);
+  }
+
+  50% {
+    clip-path: polygon(0% 60%,
+        15% 65%,
+        34% 66%,
+        51% 62%,
+        67% 50%,
+        84% 45%,
+        100% 46%,
+        100% 100%,
+        0% 100%);
+  }
+}
+
+.tankviewbox .mytank-botm .myloader {
+  width: 17rem;
+  height: 17rem;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  font-size: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.tankviewbox .mytank-botm .lowline {
+  width: 100%;
+  position: absolute;
+  border-top: 3px dashed rgb(200, 189, 189);
+  top: 14.5%;
+}
+
+.tankviewbox .mytank-botm .highline {
+  width: 100%;
+  position: absolute;
+  border-top: 3px dashed rgb(200, 189, 189);
+  top: 81%;
+}
+
+.tankviewbody {
+  overflow: visible;
+}
+
+.tankviewbox .alert {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.tankviewbox .alert span {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  font-size: 3rem;
+  color: white;
+  margin-right: 80px;
+  margin-bottom: 50px;
+  font-weight: 800;
+  animation: alert 1s ease-in-out infinite;
+}
+
+@keyframes alert {
+
+  0%,
+  100% {
+    color: red;
+    background-color: transparent;
+  }
+
+  50% {
+    color: white;
+    background-color: red;
+  }
+}
+
+.tankviewbox .infobox {
+  display: none;
+}
+
+.tankviewbox .mydata {
+  width: 100%;
+  height: 100%;
+}
+
+.tankviewbox .tankdata .datastore {
+  padding: 30px;
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  display: flex;
+  border: 3px solid #009688;
+  border-radius: 30px;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tankviewbox .tankdata .upperdata {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+
+.tankviewbox .tankdata .upperdata .dataget {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.tankviewbox .tankdata .upperdata span {
+  color: white;
+}
+
+.tankviewbox .tankdata .upperdata .datatoggle {
+  width: 100px;
+  height: 40px;
+  background-color: #009688;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 0 7px;
+  gap: 1rem;
+}
+
+.tankviewbox .tankdata .upperdata .datatoggle .circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.tankviewbox .tankdata .upperdata .datatoggle h1 {
+  font-size: 1rem;
+  color: white;
+}
+
+.tankviewbox .tankdata .upperdata .erase button {
+  background-color: #009688;
+  color: white;
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.tankviewbox .tankdata .upperdata .erase button:hover {
+  background-color: transparent;
+  border: 3px solid #009688;
+}
+
+.tankviewbox .tankdata .line {
+  width: 100%;
+  height: 1px;
+  background-color: #009688;
+}
+
+.tankviewbox .tankdata .lowerdata {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-size: 1rem;
+}
+
+/*Code from chatgpt*/
+/* Container for the slider switch */
+.slider {
+  position: relative;
+  width: 80px;
+  /* Adjust the width to accommodate the labels */
+  height: 40px;
+}
+
+/* Hidden checkbox input */
+.slider input[type="checkbox"] {
+  display: none;
+}
+
+/* The slider itself */
+.slider-label {
+  cursor: pointer;
+  height: 100%;
+  background-color: transparent;
+  border: 2px solid #009688;
+  border-radius: 30px;
+  /* Makes it look like a round slider */
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.7rem;
+  padding-right: 15px;
+  /* Add padding for the labels */
+}
+
+/* Style for the slider when it's checked (on state) */
+.slider input[type="checkbox"]:checked+.slider-label {
+  background-color: #009688;
+  /* Change the background color to indicate it's on */
+}
+
+/* Style for the slider's handle (the circle) */
+.slider-label::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 5px;
+  /* Position the handle at the start of the slider */
+  /* Vertically centered */
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  /* Makes it a circle */
+  transition: transform 0.3s ease;
+}
+
+/* Style for the slider's handle when it's checked (on state) */
+.slider input[type="checkbox"]:checked+.slider-label::before {
+  transform: translateX(45px);
+  /* Move the handle to the end of the slider */
+}
+
+/* Style for the "ON" label */
+.on {
+  font-size: 1.5rem;
+  opacity: 1;
+  /* Make "ON" visible */
+  transition: opacity 0.3s ease;
+}
+
+/* Style for the "OFF" label */
+.off {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.slider input[type="checkbox"]:not(:checked)+.slider-label .off {
+  opacity: 1;
+}
+
+/* Hide "ON" when the switch is unchecked (OFF) */
+.slider input[type="checkbox"]:not(:checked)+.slider-label .on {
+  opacity: 0;
+}
+
+/* Hide "OFF" when the switch is checked (ON) */
+.slider input[type="checkbox"]:checked+.slider-label .off {
+  opacity: 0;
+}
+
+.tankviewbox .pop-up {
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  transition: 0.5s;
+  z-index: 1500;
+}
+
+.tankviewbox .pop-up-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 40px;
+  padding: 50px;
+  gap: 1rem;
+  width: 100%;
+}
+
+.tankviewbox .pop-up-box i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 30px;
+  font-size: 1.2rem;
+}
+
+.tankviewbox .pop-up-box .img-box {
+  width: 12rem;
+  height: 12rem;
+}
+
+.tankviewbox .pop-up input {
+  background-color: white;
+  padding: 10px;
+  padding-left: 20px;
+  border-radius: 20px;
+  width: 100%;
+  font-weight: 500;
+  border: 2px solid #009688;
+}
+
+.tankviewbox .pop-up button {
+  padding: 10px;
+  width: 8rem;
+  border: 0;
+  background-color: #009688;
+  color: white;
+  border-radius: 40px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+.tankviewbox .pop-up-box h1 {
+  color: black;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+.tankviewbox .pipe {
+  position: absolute;
+  top: 40px;
+  right: 65px;
+  margin: 30px 0px 0 30px;
+  display: flex;
+  gap: 0;
+  justify-content: space-between;
+}
+
+.tankviewbox .pipe .box-1,
+.tankviewbox .pipe .box-2 {
+  width: 5rem;
+  height: 20px;
+  background-color: white;
+  border: 0;
+  border-radius: 0 15px 0 0;
+}
+
+.tankviewbox .pipe .box-1 {
+  width: 7rem;
+}
+
+.tankviewbox .pipe .box-2 {
+  transform: rotate(270deg);
+  border-radius: 0 0 15px 0;
+  position: absolute;
+  top: 30px;
+  left: 65px;
+}
+
+.tankviewbox .infotable {
+  display: none;
+}
+
+/* tankconfigbox */
+
+.tankconfigbox .mybutton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  padding: 2rem;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 17rem;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.tankconfigbox .mybutton button {
+  padding: 7px;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 1rem;
+  background-color: transparent;
+  color: white;
+  font-weight: 600;
+  border: 5px solid #009688;
+  border-radius: 50px;
+  z-index: 2;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: center;
+}
+
+.tankconfigbox .mybutton button span {
+  width: 0;
+  height: 100%;
+  position: absolute;
+  border-radius: 50px;
+  background-color: #009688;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.tankconfigbox .mybutton button:hover span {
+  width: 100%;
+}
+
+.tankconfigbox .mybutton button:hover {
+  border: 0;
+  background-color: transparent;
+  color: white;
+}
+
+.tankconfigbox .mypopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s;
+  z-index: 600;
+}
+
+.mypopup .loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 2s linear infinite;
+  padding: 4rem;
+  margin: 3rem;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.tankconfigbox .mypopup .pop-up {
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 3px;
+  gap: 1.5rem;
+}
+
+.mypopup p {
+  text-transform: capitalize;
+}
+
+.mypopup button {
+  padding: 7px 40px;
+  font-size: 1.3rem;
+  background-color: #009688;
+  color: white;
+  border: none;
+  border-radius: 35px;
+}
+
+.tankconfigbox .mypopup i {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 25px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.tankconfigbox .mypopup .img-box {
+  width: 12rem;
+  height: auto;
+  margin: 0 50px;
+}
+
+.tankconfigbox .mypopup img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.tankconfigbox .mypopup .pop {
+  z-index: 500;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.tankconfigbox .mypopup .pop-result {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  background-color: white;
+  align-items: center;
+  padding: 20px 3px;
+  border-radius: 20px;
+  gap: 1rem;
+}
+
+.tankconfigbox .mypopup .pop-result .img-box {
+  animation: tick 01s forwards;
+}
+
+.tankconfigbox button .submit {
+  background-color: #009688;
+  width: 5rem;
+}
+
+@keyframes tick {
+  0% {
+    transform: scale(0.1);
+  }
+
+  70% {
+    transform: scale(1.1);
+  }
+
+  80% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.tankconfigbox .blur-screen {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  display: none;
+}
+
+/* roomviewpage */
+.roomviewpagebody {
+  overflow: scroll;
+}
+
+.roomviewpage .box-content {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  padding: 40px;
+  margin-top: 5rem;
+}
+
+.roomviewpage .box-content .box {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background: transparent;
+  backdrop-filter: blur(20px);
+  height: 100%;
+  padding: 30px 50px;
+  border: 3px solid #009688;
+  border-radius: 30px;
+  gap: 2rem;
+}
+
+.roomviewpage .box-content .box .details {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.2rem;
+  justify-content: center;
+}
+
+.roomviewpage .box-content .box .details input {
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  border-bottom: 2px solid white;
+  color: wheat;
+  font-size: 1rem;
+  width: 4rem;
+}
+
+.roomviewpage .box-content .box select {
+  background-color: transparent;
+  border: 3px solid #009688;
+  font-size: 1rem;
+  color: white;
+  padding: 0 10px;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.roomviewpage .box-content .box option {
+  background-color: #009688;
+  color: white;
+}
+
+.roomviewpage .box-content .box .power-icon {
+  background-color: rgb(9, 185, 185);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 10rem;
+  width: 10rem;
+}
+
+.roomviewpage .box-content .box i {
+  font-size: 8rem;
+  position: relative;
+}
+
+.roomviewpage .details span {
+  white-space: nowrap;
+  /* Prevent text from wrapping */
+  overflow: hidden;
+  /* Hide any overflowing content */
+  text-overflow: ellipsis;
+  /* Display an ellipsis (...) when text overflows */
+  width: 100%;
+  max-width: 3.5rem;
+}
+
+.roomviewpage .inputroom {
+  background-color: transparent;
+  border: 2px solid #009688;
+  color: white;
+  display: none;
+  font-size: 1rem;
+}
+
+.roomviewpage #checktitle {
+  font-size: 1.5rem;
+}
+
+/* registration */
+.registration .contain {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 576px;
+  height: 699px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.registration .toggle-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 30px;
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.registration .toggle-btn button {
+  padding: 10px;
+  width: 9rem;
+  background-color: transparent;
+  color: black;
+  font-size: 1rem;
+  border-radius: 60px;
+  border: 2px solid black;
+  font-weight: 500;
+  position: relative;
+  transform: 0.5s;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.registration .toggle-btn button span {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background-color: black;
+  top: 0;
+  left: 0;
+  border-radius: 60px;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.registration .toggle-btn button:hover span {
+  width: 100%;
+}
+
+.registration .toggle-btn button:hover {
+  color: white;
+  border: 0;
+}
+
+.registration .box .box-img {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  margin-top: 8rem;
+  position: absolute;
+  right: 100%;
+  transition: 0.5s;
+  flex: 1 1 17rems;
+}
+
+.registration .box .inputname,
+.registration .box .inputemail,
+.registration .box .inputpassword {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.registration .box input {
+  border: 0;
+  outline: 0;
+  text-transform: capitalize;
+  border-bottom: 3.5px solid rgb(128, 128, 128, 0.5);
+  color: rgb(128, 128, 128, 0.9);
+  font-size: 1rem;
+  padding-bottom: 5px;
+  font-weight: 500;
+  width: 100%;
+  color: black;
+}
+
+.registration .box .box-img .check {
+  display: flex;
+  gap: 10px;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.registration .box .box-img .content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  text-transform: capitalize;
+  font-size: 0.7rem;
+}
+
+.registration .box .box-img .content p {
+  font-weight: 300;
+}
+
+.registration .box .box-img .content a {
+  font-weight: bold;
+  font-size: 1rem;
+  color: black;
+  padding-left: 5px;
+}
+
+.registration .box .box-img {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  width: 100%;
+  padding: 3rem;
+}
+
+.registration .box .box-form {
+  position: absolute;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  width: 100%;
+  padding: 3rem;
+  transition: 0.5s;
+  margin-top: 4rem;
+}
+
+.registration .box .box-form span {
+  text-transform: capitalize;
+  font-size: 3rem;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+
+.registration .box .box-form input {
+  border: 0;
+  outline: 0;
+  text-transform: capitalize;
+  border-bottom: 3.5px solid rgb(128, 128, 128, 0.5);
+  color: rgb(128, 128, 128, 0.9);
+  font-size: 1rem;
+  padding-bottom: 5px;
+  font-weight: 500;
+  color: black;
+}
+
+.registration .box .box-form button,
+.registration .box .box-img button {
+  padding: 20px;
+  background-color: transparent;
+  color: white;
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  border: 2px solid black;
+  position: relative;
+  z-index: 2000;
+  transition: 0.5s;
+}
+
+.registration .box .box-form button span,
+.registration .box .box-img button span {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.registration .box .box-form button:hover span,
+.registration .box .box-img button:hover span {
+  width: 0;
+  height: 100%;
+}
+
+.registration .box .box-form button:hover,
+.registration .box .box-img button:hover {
+  color: black;
+}
+
+.registration .box .box-form .check,
+.registration .box .box-img .check {
+  display: flex;
+  gap: 10px;
+  font-size: 0.9rem;
+  font-weight: 300;
+  align-items: center;
+}
+
+.registration .box .check input {
+  height: 2rem;
+  width: 2rem;
+  color: black;
+}
+
+.registration .box .box-form .content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  text-transform: capitalize;
+  font-size: 0.7rem;
+}
+
+.registration .box .box-form .content p {
+  font-weight: 300;
+}
+
+.registration .box .box-form .content a {
+  font-weight: bold;
+  font-size: 1rem;
+  color: black;
+  padding-left: 5px;
+}
+
+.registration label.error {
+  color: red;
+  position: absolute;
+  display: flex;
+  padding: 5rem 5rem 0 0;
+  z-index: -5;
+}
+
+
+/* Import Google font - Poppins */
+
+.otpbody {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  position: absolute;
+  z-index: -1;
+  backdrop-filter: blur(10px);
+  top: 0;
+  opacity: 0;
+}
+
+:where(.container, form, .input-field, header) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: #fff;
+  padding: 30px 65px;
+  border-radius: 12px;
+  row-gap: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  z-index: 8000;
+  position: relative;
+  transform: scale(1%);
+  transition: 0.5s;
+}
+
+.container header {
+  height: 65px;
+  width: 65px;
+  background: #4070f4;
+  color: #fff;
+  font-size: 2.5rem;
+  border-radius: 50%;
+}
+
+.container h4 {
+  font-size: 1.25rem;
+  color: #333;
+  font-weight: 500;
+}
+
+form .input-field {
+  flex-direction: row;
+  column-gap: 10px;
+}
+
+.input-field input {
+  height: 45px;
+  width: 42px;
+  border-radius: 6px;
+  outline: none;
+  font-size: 1.125rem;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.input-field input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.input-field input::-webkit-inner-spin-button,
+.input-field input::-webkit-outer-spin-button {
+  display: none;
+}
+
+.container form button {
+  margin-top: 25px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  padding: 9px 0;
+  border-radius: 6px;
+  pointer-events: none;
+  background: #6e93f7;
+  transition: all 0.2s ease;
+  z-index: 8000;
+}
+
+.container form button.active {
+  background: #4070f4;
+  pointer-events: auto;
+}
+
+.container form button:hover {
+  background: #0e4bf1;
+}
+
+/*account page */
+
+.account {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: none;
+  z-index: 5000;
+  background-color: #009688;
+}
+
+.account .account-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  padding-top: 3rem;
+  background-color: white;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.account .account-box .close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+}
+
+.account .account-box .close-btn i {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.account .account-box .account-icon .icon-box i {
+  font-size: 8rem;
+}
+
+.account .account-box .account-data ul {
+  list-style: none;
+}
+
+.account .account-box .account-data ul li {
+  border-top: 2px solid white;
+  width: 100%;
+  padding: 20px;
+  text-transform: none;
+  text-align: center;
+}
+
+.account .account-box .account-data ul :last-child:hover {
+  cursor: pointer;
+  background-color: #009688;
+  border-radius: 0 0 20px 20px;
+  color: white;
+}
+
+/*Entery password*/
+.enterypass {
+  position: fixed;
+  z-index: 600;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 50px 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.enterypass i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+  font-size: 1rem;
+}
+
+.enterypass span {
+  font-size: 1rem;
+}
+
+.inputbox {
+  position: relative;
+}
+
+.inputbox input {
+  border: 2px solid black;
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: transparent;
+  position: relative;
+  z-index: 2;
+  font-size: 1rem;
+  text-transform: none;
+}
+
+.inputbox span {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 0 5px;
+  font-size: 0.8rem;
+  background-color: white;
+  z-index: 1;
+  opacity: 0.5;
+}
+
+.inputbox input:focus~span,
+.inputbox input:valid~span {
+  transform: translate(0, -19px);
+  z-index: 3;
+  opacity: 1;
+}
+
+.enterypass button {
+  background-color: #009688;
+  border: 0;
+  color: white;
+  padding: 7px 40px;
+  border-radius: 40px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  outline: none;
+}
+
+/*fancontroll*/
+
+.fancontroll {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fancontroll .mypower {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(6, 233, 233);
+  border-radius: 50%;
+  padding: 40px;
+}
+
+.fancontroll .mypower i {
+  font-size: 16rem;
+  z-index: 1;
+  color: white;
+}
+
+/*erase popup*/
+
+.pop-up {
+  z-index: 600;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 40px;
+  border-radius: 30px;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.pop-up i {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 10px;
+  font-size: 1.5rem;
+}
+
+.pop-up h1 {
+  font-size: 1rem;
+  width: 100%;
+}
+
+.pop-up .img-box {
+  height: 150px;
+  width: 150px;
+}
+
+.pop-up .img-box img {
+  object-fit: contain;
+}
+
+.pop-up form input {
+  padding: 15px;
+  border-radius: 20px;
+  border: 2px solid black;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.pop-up form button {
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-size: 1rem;
+  border: 0;
+  background-color: #009688;
+  color: white;
+}
+
+/*delete*/
+.deletebox {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 30px;
+  background-color: white;
+  border-radius: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
+  z-index: 700;
+}
+
+.deletebox i {
+  font-size: 1rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 1rem;
+}
+
+.deletebox span {
+  font-size: 3rem;
+  color: red;
+}
+
+.deletebox p {
+  font-size: 1rem;
+  color: black;
+}
+
+.deletebox button {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #009688;
+  color: white;
+  border: 0;
+  outline: 0;
+  font-size: 1rem;
+}
+
+/* responsive */
+
+/*computer size*/
+@media (max-width:1550px) {
+
+  .box-1,
+  .box-2,
+  .box-3,
+  .box-4 {
+    max-width: 21rem;
+  }
+
+  .box-1 .col-1 {
+    width: 14rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .mytitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .motorconfigbox .noon {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .tankviewbox .infobox {
+    display: inline;
+    color: white;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    margin: 0 10px;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    border-radius: 0 0 20px 20px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tankviewbox .infotable {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: inline;
+  }
+
+  .tankviewbox .info-title {
+    display: flex;
+    justify-content: space-around;
+    background-color: #009688;
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .tankviewbox .info-title .myarrow i {
+    transition: 0.5s;
+  }
+
+  .tankviewbox .info-title .end {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .tankviewbox .infobox .levelinfo,
+  .tankviewbox .infobox .statusinfo,
+  .tankviewbox .infobox .dash {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100%;
+  }
+
+  .motorconfigbox .time-unit {
+    width: 10rem;
+  }
+
+  .tankviewbox .statusinfo,
+  .tankviewbox .levelinfo {
+    display: none;
+  }
+
+  .motorconfigbox .number {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
+@media (max-width: 800px) {
+
+  .tankviewbox .tankdata .lowerdata {
+    flex-direction: column;
+  }
+
+  .motorviewbox .time {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .mytitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .myconfig .mybutton button {
+    width: 20rem;
+  }
+
+  .motorconfigbox .noon {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .motorconfigbox .time-unit {
+    width: 8rem;
+  }
+
+  .motorconfigbox .number {
+    width: 8rem;
+    height: 8rem;
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .tankviewbox .mytank .mytank-botm {
+    width: 20rem;
+    height: 23rem;
+  }
+
+  #motortitle {
+    margin-top: 3rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .tankviewbox .mytank .mytank-top {
+    width: 12rem;
+  }
+
+  .tankviewbox .tankdata .datastore {
+    padding: 10px;
+  }
+
+  .tankviewbox .tankdata .upperdata .erase button {
+    font-size: 1rem;
+  }
+
+  .btnconfigure {
+    font-size: 1rem;
+    padding: 5px;
+  }
+
+  .backarrow {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 450px) {
+
+  .line,
+  .line2 {
+    font-size: 2rem;
+  }
+
+  .motorconfigbox .time-selector {
+    padding: 15px;
+  }
+
+  .motorconfigbox .noon {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .motorconfigbox .time-unit {
+    width: 6rem;
+  }
+
+  .motorconfigbox .number {
+    width: 6rem;
+    height: 6rem;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 400px) {
+  #fantitle {
+    margin-top: 3rem;
+  }
+
+  .myconfig .mybutton {
+    margin-top: 5rem;
+  }
+
+  .fancontroll .mypower i {
+    font-size: 10rem;
+  }
+
+  .box-3 .col-3 {
+    width: 80%;
+  }
+}
+
+@media (max-width: 370px) {
+  .box-2 .col-3 .myinfo ul {
+    display: none;
+  }
+
+  .boxtime .info-top {
+    font-size: 1.2rem;
+  }
+
+  .box-2 .col-3 {
+    height: 100%;
+    width: 20%;
+  }
+}
+
+/*mobile size*/
+@media (max-width:360px) {
+
+  .line,
+  .line2 {
+    font-size: 1.7rem;
+  }
+
+  .btnconfigure {
+    font-size: 0.8rem;
+    padding: 5px;
+  }
+
+  .myarrow {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .mytitle {
+    font-size: 1.2rem;
+  }
+
+  /*registration*/
+
+  .registration .contain {
+    width: 20rem;
+    height: 35rem;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+  }
+
+  .registration .toggle-btn {
+    gap: 1rem;
+    justify-content: space-between;
+  }
+
+  .registration .toggle-btn button {
+    width: 7rem;
+    padding: 5px 0;
+    font-size: 0.7rem;
+  }
+
+  .registration .box-img,
+  .registration .box-form {
+    gap: 50px;
+    width: 20rem;
+    padding: 1.5rem;
+    padding-top: 1rem;
+  }
+
+  .registration .box-img span,
+  .registration .box-form span {
+    font-size: 1px;
+  }
+
+  /*home*/
+  .myhomebody {
+    overflow: scroll;
+  }
+
+  .myhome {
+    height: 190vh;
+  }
+
+  .myhome .mybox {
+    padding: 0 1rem 0 1rem;
+    margin-top: 5rem;
+  }
+
+  .box-1,
+  .box-2,
+  .box-3,
+  .box-4 {
+    max-width: 15rem;
+    max-height: 18rem;
+  }
+
+  .myhome .col-2 .mypower i {
+    font-size: 3rem;
+  }
+
+  .myhome .col-2 .mypower span {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .myhome .col-2 .myarrow {
+    width: 40px;
+    height: 40px;
+  }
+
+  .myhome .box-1 {
+    padding: 0;
+    height: 16rem;
+  }
+
+  .myhome .box-1 .col-1 {
+    width: 13rem;
+    height: 15rem;
+    margin-right: 7rem;
+    margin-top: 2rem;
+  }
+
+  .myhome .box-1 .mypower {
+    margin-right: 5rem;
+  }
+
+  .myhome .col-2 {
+    max-width: 2rem;
+  }
+
+  .myhome .box-2 {
+    max-width: 20rem;
+  }
+
+  .myhome .box-2 .col-3 .myinfo {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+  }
+
+  .myhome .myinfo ul li {
+    font-size: 1rem;
+  }
+
+  .myhome .box-3 {
+    max-width: 20rem;
+    padding: 2rem;
+  }
+
+  .myhome .box-3 .col-1 {
+    width: 12rem;
+    padding-left: 0;
+  }
+
+  .myhome .box-4 {
+    max-width: 20rem;
+  }
+
+  .myhome .box-4 .col-2 {
+    margin-right: 3rem;
+  }
+
+  .myhome .box-4 .col-2 .mypower i {
+    font-size: 3rem;
+  }
+
+  .myhome .box-4 .col-2 .mypower span {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  /*tank-view-box*/
+  .tankviewbox .tankpage {
+    gap: 2rem;
+  }
+
+  .tankviewbox .mytitle {
+    margin-top: 6rem;
+    font-size: 1.5rem;
+  }
+
+  .tankviewbox .mytank .mytank-top {
+    width: 12rem;
+    height: 20px;
+  }
+
+  .tankviewbox .mytank .mytank-botm {
+    width: 17rem;
+    height: 20rem;
+  }
+
+  .tankviewbox .mytankinfo {
+    margin-top: 0rem;
+  }
+
+  .tankviewbox .mytank-botm .myloader {
+    width: 9rem;
+    height: 9rem;
+    font-size: 3rem;
+  }
+
+  .tankviewbox .tankdata .datastore {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .tankviewbox .tankdata .upperdata {
+    font-size: 1rem;
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  .tankviewbox .tankdata .upperdata .erase button {
+    font-size: 0.7rem;
+    padding: 5px 10px;
+    width: 100%;
+  }
+
+  .tankviewbox .tankdata .upperdata .slider-label {
+    gap: 3px;
+  }
+
+  .tankviewbox .tankdata .upperdata .on {
+    font-size: 1rem;
+  }
+
+  .tankviewbox .tankdata .lowerdata {
+    padding: 0;
+    font-size: 1rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .tankviewbox .pop-up-box i {
+    font-size: 0.7rem;
+  }
+
+  .tankviewbox .pop-up-box {
+    padding: 10px;
+    min-width: 17rem;
+  }
+
+  .tankviewbox .pop-up-box .img-box {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .tankviewbox .pop-up-box h1 {
+    font-size: 0.7rem;
+    width: 100%;
+  }
+
+  /*tankconfigbox*/
+  .tankconfigbox .mybutton button {
+    font-size: 1rem;
+  }
+
+  .tankconfigbox .mybutton {
+    width: 100%;
+  }
+
+  /*motorviewbox*/
+
+  .motorviewbox .mytitle {
+    margin-top: 4rem;
+  }
+
+  .motorviewbox .boxtime {
+    width: 100%;
+    height: 100%;
+  }
+
+  .motorviewbox .boxtime-1,
+  .motorviewbox .boxtime-2 {
+    width: 100%;
+    height: 100%;
+    padding-right: 10px;
+  }
+
+
+  .motorviewbox .time {
+    font-size: 2rem;
+  }
+
+  /*motorconfigbox*/
+  .motorconfigbox .mytitle {
+    margin-top: 3rem;
+  }
+
+  .motorconfigbox span {
+    font-size: 1.2rem;
+  }
+
+  .roomviewpage .box-content {
+    margin-top: 10rem;
+  }
+
+  .motorconfigbox .time-selector {
+    flex-wrap: wrap;
+    margin: 1rem;
+    height: 27rem;
+    width: 20rem;
+    left: 45%;
+  }
+
+  .motorconfigbox .timeno {
+    width: 6rem;
+    margin: 0;
+  }
+
+  .motorconfigbox .dailtimer {
+    gap: 5px;
+  }
+
+  .motorconfigbox .time-unit {
+    width: 5rem;
+  }
+
+  .motorconfigbox .number {
+    font-size: 2rem;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+
+  .motorconfigbox .noon {
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    padding: 10px;
+  }
+
+  .motorconfigbox .mysave {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  /*roomviewpage*/
+  .roomviewpage .mytitle {
+    margin-top: 5rem;
+    z-index: 8000;
+  }
+
+  /*config*/
+  .myconfig .mybutton {
+    width: 100%;
+  }
+
+  .myconfig .mybutton button {
+    font-size: 1.2rem;
+    padding: 20px;
+  }
+
+  /*wificonfig*/
+
+  .mywificonfig form label,
+  .mywificonfig form input {
+    font-size: 1rem;
+  }
+
+  .mywificonfig form .myinput i,
+  .mywificonfig form .mypassword i {
+    font-size: 1.2rem;
+  }
+
+  .mywificonfig form input::placeholder {
+    font-size: 0.7rem;
+  }
+
+  .mywificonfig form button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-height:730px) {
+  .tankviewbox .mytankinfo {
+    margin-top: 4rem;
+  }
+}
+
+.fancontroll .power-of {
+  background-color: rgb(173, 158, 158);
+}
