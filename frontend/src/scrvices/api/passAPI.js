@@ -1,6 +1,6 @@
 import axios, { Axios } from "axios"
 
-const base_url = "http://localhost:4000"
+const base_url = "https://home-automation-l30n.onrender.com"
 
 export const PASS_GET = () => {
     return axios.get(`${base_url}/fetch/all`)

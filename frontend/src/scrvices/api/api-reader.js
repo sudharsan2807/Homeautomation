@@ -4,7 +4,7 @@ export const GET_1 = () => {
     return axios.get("https://api.thingspeak.com/channels/2243097/feeds.json?api_key=DA68VIED297MKPZ0&results=1")
 }
 
-const base_url = "http://localhost:4000"
+const base_url = "https://home-automation-l30n.onrender.com"
 
 export const measuredataget = () => {
     return axios.get(`${base_url}/fetch/measurment`)
