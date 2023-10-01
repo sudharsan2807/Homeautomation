@@ -8,9 +8,10 @@ const time = require('./time.js');
 const { json } = require('body-parser');
 app.use(express.json());
 app.use(cors());
+require('dotenv').config();
 
 
-mongoose.connect('mongodb+srv://sudharsan2807:' + encodeURIComponent('sony#2807') + '@cluster0.kfidy0y.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true }).then(() => {
+mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true }).then(() => {
     console.log('Connected to MongoDB');
 }).catch((error) => {
     console.error('Error on connecting to MongoDB:', error);
