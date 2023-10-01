@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 import Enterypass from './alert message/enterypass'
 
 export default function Frontpage() {
@@ -7,6 +7,9 @@ export default function Frontpage() {
         Setenterpage(!enterypage)
     }
 
+    useEffect(() => {
+        document.title = "Register-Automation"
+    }, [])
     return (
         <Fragment>
             <div class="myfront" id="myfront">
